@@ -1,0 +1,24 @@
+# Web scraping
+requests
+beautifulsoup4
+lxml
+
+# Data processing
+pandas
+numpy
+
+# Embeddings and Vector Store
+sentence-transformers
+faiss-cpu
+
+# LLM and RAG
+openai
+langchain
+langchain-community
+python-dotenv
+
+# UI
+streamlit
+
+# Utilities
+tqdm
