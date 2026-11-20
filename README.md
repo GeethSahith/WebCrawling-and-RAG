@@ -27,22 +27,27 @@ OPENAI_API_KEY=openai_api_key
 ## System Workflow
 
 ### Step 1: Run the Crawler to crawl the website
+```bash
 python crawler.py
+```
 
 Saves to: data/raw/credit_cards1.json
 ### Step 2: Preprocess Data
+```bash
 python preprocess.py
-
+```
 Saves to: data/chunks/card_chunks.json
 ### Step 3: Build Vector Store
+```bash
 python index.py
-
+```
 vector_store/index.faiss - FAISS vector index
 vector_store/metadata.pkl - Card metadata (pickled list)
 
 ### Step 5: Run Streamlit
+```bash
 streamlit run app.py
-
+```
 
 ## Example Queries
 What does Air France KLM Visa Signature card offer?
